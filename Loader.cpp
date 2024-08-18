@@ -17,6 +17,7 @@ INT b64decode(const PBYTE Src, UINT SrcLen, PCHAR Dest, UINT DestLen)
 	if (!Ret)
 	{
 		std::cout << "Base64 Decoding Error: " << GetLastError();
+		return 1;
 	}
 
 	return LenOut;
@@ -35,6 +36,7 @@ INT scrun()
 	if (!b64Ret)
 	{
 		std::cout << "Error in b64decode: " << GetLastError();
+		return 1;
 	}
 
 	DWORD OldProtect = 0;

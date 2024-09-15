@@ -9,6 +9,7 @@ INT main()
 {
 	std::cout << "Loading Shellcode....\n" << std::endl;
 	scrun();
+	return 0;
 }
 
 
